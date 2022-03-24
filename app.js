@@ -2,10 +2,12 @@
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
+const todoFilter = document.querySelector('.filter-todo');
 
 //* Event Listeners
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteTodo);
+todoFilter.addEventListener('click', filterTodos);
 
 //* Functions
 function addTodo(event){
@@ -41,9 +43,9 @@ function deleteTodo(e){
     if(item.classList[0] === 'trash-btn'){
         const parent = item.parentElement;
         parent.classList.add('fall');
-        parent.addEventListener("transition", setTimeout( function() {
+        parent.addEventListener("transitionend",function() {
             parent.remove();
-        }, 600));
+        });
         // parent.remove();
     }
 
@@ -52,3 +54,29 @@ function deleteTodo(e){
         parent.classList.toggle('completed');
     }
 }
+
+// function filterTodos(e) {
+//     const todos = todoList.childNodes;
+//     todos.forEach(function (todo) {
+//         switch (e.target.value) {
+//             case "all":
+//                 todo.style.display = "flex";
+//                 break;
+//             case "completed":
+//                 if (todo.classList.contains("completed")) {
+//                     todo.style.display = "flex";
+//                 } else {
+//                     todo.style.display = "none";
+//                 }
+//                 break;
+//             case "uncompleted": 
+//                 if (!todo.classList.contains("completed")) {
+//                     todo.style.display = "flex";
+//                 } else {
+//                     todo.style.display = "none";
+//                 }
+//                 break;
+//             }   
+//         }
+//     );
+// }

@@ -34,6 +34,8 @@ form button{
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
+    /* border: 1rem;
+    border: black; */
 }
 
 form button:hover{
@@ -104,7 +106,7 @@ select{
     appearance: none;
     outline: none;
     border: none;
-
+    font-family: 'Rubik', sans-serif;
 }
 
 .select{
