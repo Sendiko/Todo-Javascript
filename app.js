@@ -41,10 +41,10 @@ function deleteTodo(e){
     if(item.classList[0] === 'trash-btn'){
         const parent = item.parentElement;
         parent.classList.add('fall');
-        // parent.addEventListener("transition", function() {
-        //     parent.remove()
-        // });
-        parent.remove();
+        parent.addEventListener("transition", setTimeout( function() {
+            parent.remove();
+        }, 600));
+        // parent.remove();
     }
 
     if(item.classList[0] === 'complete-btn'){
