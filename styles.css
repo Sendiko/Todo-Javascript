@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(120deg,#e2c35d, #d99771);
+    background-image: linear-gradient(120deg,#457B9D, #1D3557);
     color: white;
     font-family: 'Rubik', sans-serif;
     min-height: 100vh;
@@ -30,7 +30,7 @@ form input, form button{
 }
 
 form button{
-    color: #e2c35d;
+    color: #457B9D;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -39,7 +39,7 @@ form button{
 }
 
 form button:hover{
-    background: #e2c35d;
+    background: #457B9D;
     color: white;
 }
 
@@ -74,7 +74,7 @@ form button:hover{
 }
 
 .trash-btn, .complete-btn{
-    background-color: #ff6f47;
+    background-color: #E63946;
     color: white;
     border: none;
     padding: 1rem;
@@ -83,7 +83,7 @@ form button:hover{
 }
 
 .complete-btn{
-    background-color: greenyellow;
+    background-color: #A8DADC;
 }
 
 .fa-trash, .fa-check{
