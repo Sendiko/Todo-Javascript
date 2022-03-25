@@ -33,11 +33,13 @@ header, form{
 form input, form button{
     padding: 0.5rem;
     font-size: 1rem;
-    border: none;
+    border: 1rem;
+    border-radius: 5px;
     background: white;
 }
 
 form button{
+    margin-left: 0.3rem;
     color: #457B9D;
     background: white;
     cursor: pointer;
@@ -67,6 +69,8 @@ form button:hover{
     margin: 0.5rem;
     background: white;
     color: black;
+    border: 1px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,13 +88,15 @@ form button:hover{
 .trash-btn, .complete-btn{
     background-color: #E63946;
     color: white;
-    border: none;
+    border: 1px;
+    border-radius: 5px;
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
 }
 
 .complete-btn{
+    margin-right: 1vmin;
     background-color: #A8DADC;
 }
 
@@ -128,6 +134,8 @@ select{
 select{
     color: #1D3557;
     width: 10rem;
+    border: 1px;
+    border-radius: 5px;
     cursor: pointer;
     padding: 0.5rem;
 }
@@ -139,6 +147,9 @@ select{
     top: 0;
     right: 0;
     padding: 0.4rem;
+    border: 1px;
+    margin-left: 1vmin;
+    border-radius: 5px;
     pointer-events: none;
     transition: all 0.3s ease;
 }
